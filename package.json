@@ -4,13 +4,15 @@
   "description": "Minimal implementation of 2048 game using React and Redux",
   "scripts": {
     "start": "node server.js",
-    "build": "./node_modules/.bin/webpack --config webpack.config.production.js"
+    "build": "./node_modules/.bin/webpack --config webpack.config.production.js",
+    "deploy": "node ./build-gh-pages.js && rm -r ./dist"
   },
   "dependencies": {
     "babel-core": "^5.6.18",
     "babel-loader": "^5.1.4",
     "babel-runtime": "^5.8.20",
     "css-loader": "^0.23.1",
+    "gh-pages": "^0.11.0",
     "lodash.isequal": "^4.0.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.0",
